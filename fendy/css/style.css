@@ -1,0 +1,141 @@
+@charset "utf-8";
+@import "../../../cdn/bootstrap/5.3.3/css/bootstrap.min.css";
+@import "../../../cdn/google-font/Source_Sans_Pro/css/css.css";
+@import "../../../cdn/tutorials/css/animations.css";
+@import "../../../cdn/tutorials/css/btn-to-top.css";
+@import "../../../cdn/tutorials/css/scrollbar.css";
+
+:root {
+  --header-height: 48px;
+  --backdrop-filter: saturate(180%) blur(12px);
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+  height: var(--header-height);
+  background-color: rgba(255, 255, 255, .85);
+  -webkit-backdrop-filter: var(--backdrop-filter);
+  backdrop-filter: var(--backdrop-filter);
+}
+
+main {
+  margin-top: var(--header-height);
+}
+
+a {
+  text-decoration: none;
+}
+
+header .container,
+main .container,
+footer .container {
+  max-width: 900px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+table>thead a {
+  --bs-text-opacity: 1;
+  color: var(--bs-emphasis-color) !important;
+  font-weight: 600 !important;
+}
+
+table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.search-input,
+.breadcrumb,
+footer {
+  background-color: #f6f7f8 !important;
+}
+
+.custom-tooltip {
+  --bs-tooltip-opacity: .5;
+}
+
+.search-i-box {
+  cursor: pointer;
+  left: calc(100% - 24px);
+  transition: left .25s ease-in-out;
+}
+
+.search-container.show .search-i-box {
+  left: 0;
+}
+
+.search-input {
+  border-color: #f6f7f8;
+  visibility: hidden;
+  width: 0;
+  transition: width .25s ease-in-out;
+}
+
+.search-input:focus {
+  border-color: var(--bs-primary-border-subtle);
+}
+
+.search-container.show .search-input {
+  visibility: visible;
+  box-shadow: none;
+  width: 100%;
+}
+
+table tr>.indexcolicon {
+  width: 36px;
+}
+
+@media (max-width: 575.98px) {
+  table tr>.indexcollastmod,
+  table tr>.indexcolsize,
+  table tr>.indexcoldesc {
+    display: none !important;
+  }
+}
+
+#scroller {
+  height: 100vh;
+}
+
+.ps__rail-y {
+  margin: calc(var(--header-height) + 2px) 0 2px 0;
+}
+
+.bi {
+  fill: var(--bs-gray);
+}
+
+.bi.bi-chevron-up {
+  fill: currentColor;
+}
+
+.bi:hover {
+  fill: currentColor;
+}
+
+.search-container>span {
+  height: calc(1.5em + .5rem - calc(var(--bs-border-width)));
+  margin-top: -1px;
+}
+
+.search-input {
+  padding-left: 2rem !important;
+}
+
+.loading .loader {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+}
+
+.loader {
+  position: unset;
+  top: unset;
+  left: unset;
+}

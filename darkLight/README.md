@@ -21,8 +21,8 @@
 ## Usage
 
 1. Download or clone the repo and copy `directory-listing` directory to the root directory of Apache.
-1. Copy `htaccess.txt` file to the root directory of your server, rename it to `.htaccess`.
-1. Inside the renamed `.htaccess` file
+2. Copy `htaccess.txt` file to the root directory of your server, rename it to `.htaccess`.
+3. Inside the renamed `.htaccess` file
    - Replace `{LISTING_DIRECTORY}` to the location of `directory-listing` folder on your server.
    - Replace `{LISTING_STYLE}` to either `grid`, `table`, `grid-darkmode` or `table-darkmode`.
 

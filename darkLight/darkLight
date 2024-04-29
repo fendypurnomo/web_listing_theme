@@ -3,66 +3,72 @@
 #
 
 # Ignore listing of the listing directory
-IndexIgnore .htaccess /listing_theme
+IndexIgnore .htaccess /listings
+IndexIgnore desktop.ini
 
 # Indexing options
 IndexOptions  +AddAltClass +Charset=UTF-8 +FancyIndexing +FoldersFirst +HTMLTable \
-							+IgnoreCase +NameWidth=* +SuppressRules +SuppressDescription +IconsAreLinks \
-							+VersionSort +XHTML +NameWidth=*
+              +IgnoreCase +NameWidth=* +SuppressRules +SuppressDescription +IconsAreLinks \
+              +VersionSort +XHTML +NameWidth=*
 
 IndexOrderDefault Ascending Name
 
 # Some meta tags to add to the head tag
-IndexHeadInsert '\
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"> \
-	<meta name="viewport" content="width=device-width, initial-scale=1"/> \
-	<link rel="stylesheet" href="/listing_theme/darkLight/css/table.css"/>'
+IndexHeadInsert '<meta charset="utf-8"> \
+                <meta http-equiv="X-UA-Compatible" content="IE=edge"> \
+                <meta name="viewport" content="width=device-width, initial-scale=1"/> \
+                <link rel="shortcut icon" href="http://localhost/favicon.ico"> \
+                <link rel="stylesheet" href="http://localhost/listings/darkLight/css/table.css"/>'
 
-HeaderName /listing_theme/darkLight/header.html
-ReadmeName /listing_theme/darkLight/readme.html
+HeaderName /listings/darkLight/header.html
+ReadmeName /listings/darkLight/readme.html
 
 # Registering icons
 # Default icon
-DefaultIcon /listing_theme/darkLight/icons/unknown.svg
+DefaultIcon /listings/darkLight/icons/unknown.svg
 
 # Some generic icons
-AddIcon /listing_theme/darkLight/icons/blank.svg ^^BLANKICON^^
-AddIcon /listing_theme/darkLight/icons/folder.svg ^^DIRECTORY^^
-AddIcon /listing_theme/darkLight/icons/folder-home.svg ..
+AddIcon /listings/darkLight/icons/blank.svg ^^BLANKICON^^
+AddIcon /listings/darkLight/icons/folder.svg ^^DIRECTORY^^
+AddIcon /listings/darkLight/icons/folder-home.svg ..
 
 # Extension specific icons
-AddIcon /listing_theme/darkLight/icons/archive.svg .zip .7z .bz2 .cab .gz .tar .rar
-AddIcon /listing_theme/darkLight/icons/audio.svg .aac .aif .aifc .aiff .ape .au .flac .iff .m4a .mid .mp3 .mpa .ra .wav .wma .f4a .f4b .oga .ogg .xm .it .s3m .mod
-AddIcon /listing_theme/darkLight/icons/bin.svg .bin .hex
-AddIcon /listing_theme/darkLight/icons/code.svg .xml
-AddIcon /listing_theme/darkLight/icons/doc.svg .doc .docx .docm .dot .dotx .dotm .log .msg .odt .pages .rtf .tex .wpd .wps
-AddIcon /listing_theme/darkLight/icons/img.svg .bmp .png .tiff .tif .gif .jpg .jpeg .jpe .psd .ai .ico .webp
-AddIcon /listing_theme/darkLight/icons/spreadsheet.svg .xlsx .xlsm .xltx .xltm .xlam .xlr .xls .csv
-AddIcon /listing_theme/darkLight/icons/presentation.svg .ppt .pptx .pot .potx .pptm .potm .xps
-AddIcon /listing_theme/darkLight/icons/c++.svg .cpp
-AddIcon /listing_theme/darkLight/icons/c.svg .c
-AddIcon /listing_theme/darkLight/icons/css3.svg .css .sass .scss .less
-AddIcon /listing_theme/darkLight/icons/font.svg .ttf .TTF .woff .WOFF .woff2 .WOFF2 .otf .OTF
-AddIcon /listing_theme/darkLight/icons/h.svg .h
-AddIcon /listing_theme/darkLight/icons/html5.svg .html .xhtml .shtml .htm .URL .url
-AddIcon /listing_theme/darkLight/icons/info.svg .nfo .info
-AddIcon /listing_theme/darkLight/icons/iso.svg .iso .img
-AddIcon /listing_theme/darkLight/icons/java.svg .jar .java
-AddIcon /listing_theme/darkLight/icons/js.svg .js .json
-AddIcon /listing_theme/darkLight/icons/markdown.svg .md
-AddIcon /listing_theme/darkLight/icons/package.svg .pkg .dmg .rpm .deb
-AddIcon /listing_theme/darkLight/icons/pdf.svg .pdf
-AddIcon /listing_theme/darkLight/icons/php.svg .php .phtml
-AddIcon /listing_theme/darkLight/icons/py.svg .py
-AddIcon /listing_theme/darkLight/icons/rb.svg .rb
-AddIcon /listing_theme/darkLight/icons/script.svg .bat .BAT .cmd .sh .ps .exe .EXE .msi .MSI
-AddIcon /listing_theme/darkLight/icons/sql.svg .sql
-AddIcon /listing_theme/darkLight/icons/text.svg .txt .cnf .conf .map .yaml
-AddIcon /listing_theme/darkLight/icons/vector.svg .svg .svgz
-AddIcon /listing_theme/darkLight/icons/video.svg .asf .asx .avi .flv .mkv .mov .mp4 .mpg .rm .srt .swf .vob .wmv .m4v .f4v .f4p .ogv .webm
+AddIcon /listings/darkLight/icons/archive.svg .zip .7z .bz2 .cab .gz .tar .rar
+AddIcon /listings/darkLight/icons/audio.svg .aac .aif .aifc .aiff .ape .au .flac \
+        .iff .m4a .mid .mp3 .mpa .ra .wav .wma .f4a .f4b .oga .ogg .xm .it .s3m .mod
+AddIcon /listings/darkLight/icons/bin.svg .bin .hex
+AddIcon /listings/darkLight/icons/code.svg .xml
+AddIcon /listings/darkLight/icons/doc.svg .doc .docx .docm .dot .dotx .dotm .log \
+        .msg .odt .pages .rtf .tex .wpd .wps
+AddIcon /listings/darkLight/icons/img.svg .bmp .png .tiff .tif .gif .jpg .jpeg .jpe \
+        .psd .ai .ico .webp
+AddIcon /listings/darkLight/icons/spreadsheet.svg .xlsx .xlsm .xltx .xltm .xlam .xlr .xls .csv
+AddIcon /listings/darkLight/icons/presentation.svg .ppt .pptx .pot .potx .pptm .potm .xps
+AddIcon /listings/darkLight/icons/c++.svg .cpp
+AddIcon /listings/darkLight/icons/c.svg .c
+AddIcon /listings/darkLight/icons/css3.svg .css .sass .scss .less
+AddIcon /listings/darkLight/icons/font.svg .ttf .TTF .woff .WOFF .woff2 .WOFF2 .otf .OTF
+AddIcon /listings/darkLight/icons/h.svg .h
+AddIcon /listings/darkLight/icons/html5.svg .html .xhtml .shtml .htm .URL .url
+AddIcon /listings/darkLight/icons/info.svg .nfo .info
+AddIcon /listings/darkLight/icons/iso.svg .iso .img
+AddIcon /listings/darkLight/icons/java.svg .jar .java
+AddIcon /listings/darkLight/icons/js.svg .js .json
+AddIcon /listings/darkLight/icons/markdown.svg .md
+AddIcon /listings/darkLight/icons/package.svg .pkg .dmg .rpm .deb
+AddIcon /listings/darkLight/icons/pdf.svg .pdf
+AddIcon /listings/darkLight/icons/php.svg .php .phtml
+AddIcon /listings/darkLight/icons/py.svg .py
+AddIcon /listings/darkLight/icons/rb.svg .rb
+AddIcon /listings/darkLight/icons/script.svg .bat .BAT .cmd .sh .ps .exe .EXE .msi .MSI
+AddIcon /listings/darkLight/icons/sql.svg .sql
+AddIcon /listings/darkLight/icons/text.svg .txt .cnf .conf .map .yaml
+AddIcon /listings/darkLight/icons/vector.svg .svg .svgz
+AddIcon /listings/darkLight/icons/video.svg .asf .asx .avi .flv .mkv .mov .mp4 .mpg .rm \
+        .srt .swf .vob .wmv .m4v .f4v .f4p .ogv .webm
 
 # Icons based on their type
-AddIconByType (TXT,/listing_theme/darkLight/icons/text.svg) text/*
-AddIconByType (IMG,/listing_theme/darkLight/icons/img.svg) image/*
-AddIconByType (SND,/listing_theme/darkLight/icons/audio.svg) audio/*
-AddIconByType (VID,/listing_theme/darkLight/icons/video.svg) video/*
+AddIconByType (TXT,/listings/darkLight/icons/text.svg) text/*
+AddIconByType (IMG,/listings/darkLight/icons/img.svg) image/*
+AddIconByType (SND,/listings/darkLight/icons/audio.svg) audio/*
+AddIconByType (VID,/listings/darkLight/icons/video.svg) video/*

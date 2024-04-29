@@ -1,88 +1,65 @@
 *,
 *::before,
-*::after {
-	box-sizing: border-box;
-}
+*::after { box-sizing: border-box; }
 
 html,
 body {
-	margin: 0;
-	color: #212121;
-	font-size: 12px;
-	font-family: system-ui, sans-serif;
-	line-height: 1.5;
-}
+    margin: 0;
+    color: #212121;
+    font-size: 12px;
+    font-family: system-ui, sans-serif;
+    line-height: 1.5; }
 
-body {
-	min-height: 100vh;
-}
+body { min-height: calc(100vh - 50px); }
 
 a {
-	color: #6200ea;
-	display: inline-block;
-	text-decoration: none;
-}
+    color: #6200ea;
+    display: inline-block;
+    text-decoration: none; }
 
-a:hover {
-	text-decoration: none;
-}
+a:hover { text-decoration: none; }
 
 main {
-	margin: 50px auto 0;
-	max-width: 56rem;
-}
+    margin: 50px auto 0;
+    max-width: 56rem; }
 
 header {
-	background-color: white;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.075);
-	position: fixed;
-	padding: 0 10px 0;
-	left: 0;
-	top: 0;
-	width: 100%;
-}
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+    position: fixed;
+    padding: 0 10px 0;
+    left: 0;
+    top: 0;
+    width: 100%; }
 
 header .header {
-	margin: 0 auto;
-	max-width: 56rem;
-}
+    margin: 0 auto;
+    max-width: 56rem; }
 
 table {
-	border-collapse: collapse;
-	text-align: left;
-	white-space: nowrap;
-	width: 100%;
-	margin: 0 auto;
-}
+    border-collapse: collapse;
+    text-align: left;
+    white-space: nowrap;
+    width: 100%;
+    margin: 0 auto; }
 
-table tr:hover {
-	background-color: #eee;
-}
+table tr:hover { background-color: #eee; }
 
-table tr .indexcolicon a {
-	border: none;
-}
+table tr .indexcolicon a { border: none; }
 
-table tr a:hover {
-	text-decoration: none;
-}
+table tr a:hover { text-decoration: none; }
 
-table tr img {
-	width: 50px;
-}
+table tr img { width: 50px; }
 
 footer,
 address {
-	padding: 2rem 1rem;
-	text-align: center;
-}
+    padding: 2rem 1rem;
+    text-align: center; }
 
 .title {
-	font-size: 1.25rem;
-	font-weight: 500;
-}
+    font-size: 1.25rem;
+    font-weight: 500; }
 
 .title .js-path a {
-	padding: 0 0.25rem 0;
-	text-decoration: none;
-}
+    padding: 0 0.25rem 0;
+    text-decoration: none; }

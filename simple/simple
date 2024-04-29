@@ -5,57 +5,60 @@
 # https://miroslavpokorny.com/simple-apache-directory-listing-theme
 #
 
-IndexOptions	+FancyIndexing +VersionSort +HTMLTable +FoldersFirst +IconsAreLinks +IgnoreCase +SuppressDescription \
-							+XHTML +IconWidth=16 +IconHeight=16 +NameWidth=*
+IndexOptions +FancyIndexing +VersionSort +HTMLTable +FoldersFirst +IconsAreLinks \
+             +IgnoreCase +SuppressDescription +XHTML +IconWidth=16 +IconHeight=16 +NameWidth=*
 
-HeaderName /listing_theme/simple/header.html
-ReadmeName /listing_theme/simple/readme.html
-IndexStyleSheet /listing_theme/simple/css/style.css
+HeaderName /listings/simple/header.html
+ReadmeName /listings/simple/readme.html
 
-IndexIgnore .htaccess /listing_theme
+IndexStyleSheet /listings/simple/css/style.css
 
-IndexHeadInsert '\
-	<meta charset="utf-8"/> \
-	<meta name="theme-color" content="#ffffff"/> \
-	<meta name="viewport" content="width=device-width, initial-scale=1"/> \
-	<meta name="msapplication-config" content="/listing_theme/simple/favicons/browserconfig.xml"/> \
-	<link rel="apple-touch-icon" sizes="180x180" href="/listing_theme/simple/favicons/apple-touch-icon.png"/> \
-	<link rel="icon" type="image/png" href="/listing_theme/simple/favicons/favicon-16x16.png" sizes="16x16"/> \
-	<link rel="icon" type="image/png" href="/listing_theme/simple/favicons/favicon-32x32.png" sizes="32x32"/> \
-	<link rel="manifest" href="/listing_theme/simple/favicons/manifest.json"/> \
-	<link rel="mask-icon" href="/listing_theme/simple/favicons/safari-pinned-tab.svg" color="#b33333"/> \
-	<link rel="shortcut icon" href="/listing_theme/simple/favicons/favicon.ico"/> \
-	<link rel="stylesheet" href="/listing_theme/simple/css/style.css"/>'
+IndexIgnore .htaccess /listings
+
+IndexHeadInsert '<meta charset="utf-8"/> \
+                <meta name="theme-color" content="#ffffff"/> \
+                <meta name="viewport" content="width=device-width, initial-scale=1"/> \
+                <meta name="msapplication-config" content="/listings/simple/favicons/browserconfig.xml"/> \
+                <link rel="apple-touch-icon" sizes="180x180" href="/listings/simple/favicons/apple-touch-icon.png"/> \
+                <link rel="icon" type="image/png" href="/listings/simple/favicons/favicon-16x16.png" sizes="16x16"/> \
+                <link rel="icon" type="image/png" href="/listings/simple/favicons/favicon-32x32.png" sizes="32x32"/> \
+                <link rel="manifest" href="/listings/simple/favicons/manifest.json"/> \
+                <link rel="mask-icon" href="/listings/simple/favicons/safari-pinned-tab.svg" color="#b33333"/> \
+                <link rel="shortcut icon" href="/listings/simple/favicons/favicon.ico"/> \
+                <link rel="stylesheet" href="/listings/simple/css/style.css"/>'
 
 IndexOrderDefault Ascending Name
 
-DefaultIcon /listing_theme/simple/icons/document.png
+DefaultIcon /listings/simple/icons/document.png
 
-AddIcon /listing_theme/simple/icons/arrow-curve-180.png ..
-AddIcon /listing_theme/simple/icons/folder.png ^^DIRECTORY^^
-AddIcon /listing_theme/simple/icons/document-text.png README INSTALL
-AddIcon /listing_theme/simple/icons/application.png .exe .app
-AddIcon /listing_theme/simple/icons/box.png .tar .tgz .tbz .tbz2 .bundle .rar .z .gz .zip .7z
-AddIcon /listing_theme/simple/icons/database.png .db .sqlite .dat
-AddIcon /listing_theme/simple/icons/disc.png .iso .image
-AddIcon /listing_theme/simple/icons/document-access.png .ade .adp .adn .accdb .accdr .accdt .mdb .mda .mdn .mdt .mdw .mdf .mde .accde .mam .maq .mar .mat .maf
-AddIcon /listing_theme/simple/icons/document-binary.png .bin .hqx .uu
-AddIcon /listing_theme/simple/icons/document-code.png .html .htm .htx .htmls .dhtml .phtml .shtml .inc .ssi .c .cc .css .h .rb .js .rb .pl .py .sh .shar .csh .ksh .tcl .as
-AddIcon /listing_theme/simple/icons/document-excel.png .xls .xla .xlb .xlc .xld .xlk .xll .xlm .xlt .xlv .xlw .xlsx .xlsm .xlsb .xltm .xlam
-AddIcon /listing_theme/simple/icons/document-excel-csv.png .csv
-AddIcon /listing_theme/simple/icons/document-flash.png .fla .flv .swf .swt .swc
-AddIcon /listing_theme/simple/icons/document-illustrator.png .ai .eps .epsf .epsi
-AddIcon /listing_theme/simple/icons/document-number.png .conf
-AddIcon /listing_theme/simple/icons/document-pdf.png .pdf
-AddIcon /listing_theme/simple/icons/document-pdf-text.png .ps
-AddIcon /listing_theme/simple/icons/document-photoshop.png .psd
-AddIcon /listing_theme/simple/icons/document-php.png .php .phps .php5 .php3 .php4 .phtm
-AddIcon /listing_theme/simple/icons/document-powerpoint.png .ppt .pptx .ppz .pot .pwz .ppa .pps .pow
-AddIcon /listing_theme/simple/icons/document-tex.png .tex .dvi
-AddIcon /listing_theme/simple/icons/document-text.png .txt
-AddIcon /listing_theme/simple/icons/document-word.png .docx .docm .doc .dotx .dotm .dot .rtf
+AddIcon /listings/simple/icons/arrow-curve-180.png ..
+AddIcon /listings/simple/icons/folder.png ^^DIRECTORY^^
+AddIcon /listings/simple/icons/document-text.png README INSTALL
+AddIcon /listings/simple/icons/application.png .exe .app
+AddIcon /listings/simple/icons/box.png .tar .tgz .tbz .tbz2 .bundle .rar .z .gz .zip .7z
+AddIcon /listings/simple/icons/database.png .db .sqlite .dat
+AddIcon /listings/simple/icons/disc.png .iso .image
+AddIcon /listings/simple/icons/document-access.png .ade .adp .adn .accdb .accdr .accdt \
+        .mdb .mda .mdn .mdt .mdw .mdf .mde .accde .mam .maq .mar .mat .maf
+AddIcon /listings/simple/icons/document-binary.png .bin .hqx .uu
+AddIcon /listings/simple/icons/document-code.png .html .htm .htx .htmls .dhtml .phtml \
+        .shtml .inc .ssi .c .cc .css .h .rb .js .rb .pl .py .sh .shar .csh .ksh .tcl .as
+AddIcon /listings/simple/icons/document-excel.png .xls .xla .xlb .xlc .xld .xlk .xll .xlm \
+        .xlt .xlv .xlw .xlsx .xlsm .xlsb .xltm .xlam
+AddIcon /listings/simple/icons/document-excel-csv.png .csv
+AddIcon /listings/simple/icons/document-flash.png .fla .flv .swf .swt .swc
+AddIcon /listings/simple/icons/document-illustrator.png .ai .eps .epsf .epsi
+AddIcon /listings/simple/icons/document-number.png .conf
+AddIcon /listings/simple/icons/document-pdf.png .pdf
+AddIcon /listings/simple/icons/document-pdf-text.png .ps
+AddIcon /listings/simple/icons/document-photoshop.png .psd
+AddIcon /listings/simple/icons/document-php.png .php .phps .php5 .php3 .php4 .phtm
+AddIcon /listings/simple/icons/document-powerpoint.png .ppt .pptx .ppz .pot .pwz .ppa .pps .pow
+AddIcon /listings/simple/icons/document-tex.png .tex .dvi
+AddIcon /listings/simple/icons/document-text.png .txt
+AddIcon /listings/simple/icons/document-word.png .docx .docm .doc .dotx .dotm .dot .rtf
 
-AddIconByType (IMG,/listing_theme/simple/icons/image.png) image/*
-AddIconByType (SND,/listing_theme/simple/icons/music.png) audio/*
-AddIconByType (TXT,/listing_theme/simple/icons/document-text.png) text/*
-AddIconByType (VID,/listing_theme/simple/icons/film.png) video/*
+AddIconByType (IMG,/listings/simple/icons/image.png) image/*
+AddIconByType (SND,/listings/simple/icons/music.png) audio/*
+AddIconByType (TXT,/listings/simple/icons/document-text.png) text/*
+AddIconByType (VID,/listings/simple/icons/film.png) video/*

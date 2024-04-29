@@ -38,3 +38,7 @@ If you have trouble running `.htaccess` version, try to look at `AllowOverride` 
 ## Footnotes ##
 
 Icons by [Yusuke Kamiyamane](http://p.yusukekamiyamane.com).
+
+## The MIT License (MIT)
+
+Copyright (c) 2017 Miroslav Pokorný(me@miroslavpokorny.com)
